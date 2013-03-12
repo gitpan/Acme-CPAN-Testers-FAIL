@@ -2,29 +2,34 @@
 use strict;
 use warnings;
 
-use 5.006000;
+use 5.008001;
 
 use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'generate a FAILing test report',
-  'AUTHOR' => 'Chris Williams <chris@bingosnet.co.uk>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0.47'
+  "ABSTRACT" => "Pretending to be Acme::CPAN::Testers::FAIL",
+  "AUTHOR" => "David Golden <dagolden\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Acme-CPAN-Testers-FAIL',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Acme::CPAN::Testers::FAIL',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.02',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "DISTNAME" => "Acme-CPAN-Testers-FAIL",
+  "EXE_FILES" => [],
+  "LICENSE" => "apache",
+  "NAME" => "Acme::CPAN::Testers::FAIL",
+  "PREREQ_PM" => {
+    "strict" => 0,
+    "warnings" => 0
+  },
+  "VERSION" => "0.02",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

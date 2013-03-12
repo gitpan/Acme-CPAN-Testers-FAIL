@@ -1,21 +1,30 @@
 NAME
-    Acme::CPAN::Testers::FAIL - generate a FAILing test report
+    Acme::CPAN::Testers::FalseNegative - Pretending to be
+    Acme::CPAN::Testers::FAIL
 
 VERSION
     version 0.02
 
 DESCRIPTION
-    Acme::CPAN::Testers::FAIL generates a "FAIL" test report when run by a
-    CPAN Tester.
+    This module is being used as an experiment to see what happens when an
+    identical distribution name and version is uploaded to CPAN.
 
-    That's pretty much it, really.
+    There is already:
+
+        BINGOS/Acme-CPAN-Testers-FAIL-0.02.tar.gz
+
+    This will have the same name and version and different module (that will
+    still be indexed).
+
+    We'll see how search engines and RT can cope.
 
 AUTHOR
-    Chris Williams <chris@bingosnet.co.uk>
+    David Golden <dagolden@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2011 by Chris Williams.
+    This software is Copyright (c) 2013 by David Golden.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software, licensed under:
+
+      The Apache License, Version 2.0, January 2004
 

@@ -1,18 +1,34 @@
 ---
-abstract: 'generate a FAILing test report'
+abstract: 'Pretending to be Acme::CPAN::Testers::FAIL'
 author:
-  - 'Chris Williams <chris@bingosnet.co.uk>'
+  - 'David Golden <dagolden@cpan.org>'
 build_requires:
-  Test::More: 0.47
+  File::Find: 0
+  File::Temp: 0
+  Test::More: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200009, CPAN::Meta::Converter version 2.110930001'
-license: perl
+generated_by: 'Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921'
+license: apache
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Acme-CPAN-Testers-FAIL
+no_index:
+  directory:
+    - t
+    - xt
+    - examples
+    - corpus
+  package:
+    - DB
+provides:
+  Acme::CPAN::Testers::FalseNegative:
+    file: lib/Acme/CPAN/Testers/FalseNegative.pm
+    version: 0.02
 requires:
-  perl: v5.6.0
+  perl: 5.008001
+  strict: 0
+  warnings: 0
 version: 0.02
